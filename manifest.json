@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "XKCD Button Explainer",
+  "version": "1.0",
+
+  "description": "Adds an explain this button to xkcd",
+
+  "icons": {
+    "48": "icons/xkcd-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.xkcd.com/*"],
+      "js": ["xkcd.js"]
+    }
+  ]
+
+}
